@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>幻灯片插件</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<style>
+  #text{
+    width:500px;
+    height:500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .a{
+    position: relative;
+    width: 2500px;
+    height:500px;
+    left:-500px;
+  }
+  .a li{
+    width:500px;
+    height:500px;
+    float: left;
+  }
+  .x{
+    position: absolute;
+    width: 500px;
+    height:50px;
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    padding-left: 160px;
+  }
+  .x li{
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    background-color: blue;
+    float: left;
+
+  }
+</style>
+<body>
+  <div id="text">
+
+    <ul class="a">
+      <li><img src="images/10.jpg" width="100%" height="100%"></li>
+      <li><img src="images/11.jpg" width="100%" height="100%"></li>
+      <li><img src="images/12.jpg" width="100%" height="100%"></li>
+      <li><img src="images/8.jpg" width="100%" height="100%"></li>
+      <li><img src="images/9.jpg" width="100%" height="100%"></li>
+    </ul>
+
+    <ul class="x">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script src="jquery.js"></script>
+  <script src="index.js"></script>
+  <script>
+    $("#text").ScrollXiaohai({
+
+    })
+  </script>
+</body>
+</html>
